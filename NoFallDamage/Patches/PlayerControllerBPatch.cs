@@ -8,9 +8,9 @@ namespace NoFallDamage.Patches
     {
         [HarmonyPatch("Update")]
         [HarmonyPostfix]
-        static void noFallDamagePatch(ref float ___timeSinceTakingGravityDamage)
+        static void noFallDamagePatch(ref bool ___takingFallDamage)
         {
-            ___timeSinceTakingGravityDamage = 0f;
+            ___takingFallDamage = false;
         }
     }
 }

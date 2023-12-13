@@ -10,7 +10,7 @@ namespace NoFallDamage
     {
         private const string modGUID = "jaceob.NoFallDamage";
         private const string modName = "No Fall Damage";
-        private const string modVersion = "1.0.0";
+        private const string modVersion = "1.0.1";
 
         private readonly Harmony harmony = new Harmony(modGUID);
 
